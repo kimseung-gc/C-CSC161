@@ -1,0 +1,24 @@
+GCD
+input: 0 0
+expected output:
+0
+
+input: 0 20
+expected output:
+20
+
+input: 20 0
+expected output:
+20
+
+input: 10 20
+expected output:
+10
+
+input: -20 -5
+expected output:
+-5
+
+input: 20 -5
+expected output:
+-5

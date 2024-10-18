@@ -1,0 +1,43 @@
+Script started on Fri Feb 17 14:19:20 2023
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"grade"[?2004l
+This program takes in an integer input from 0 to 100, and prints the alphabetical grades
+by the range.
+Please input an integer from 0 to 100: -1
+FATAL ERROR, the program has been terminated (note: give an integer between 0 - 100!!)
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"grade"[?2004l
+This program takes in an integer input from 0 to 100, and prints the alphabetical grades
+by the range.
+Please input an integer from 0 to 100: 1
+The grade is...
+ F
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"grade"[?2004l
+This program takes in an integer input from 0 to 100, and prints the alphabetical grades
+by the range.
+Please input an integer from 0 to 100: 55  9 100
+The grade is...
+ A+
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"grade"[?2004l
+This program takes in an integer input from 0 to 100, and prints the alphabetical grades
+by the range.
+Please input an integer from 0 to 100: 99
+The grade is...
+ A+
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"grade"[?2004l
+This program takes in an integer input from 0 to 100, and prints the alphabetical grades
+by the range.
+Please input an integer from 0 to 100: 101
+FATAL ERROR, the program has been terminated (note: give an integer between 0 - 100!!)
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"grade"[?2004l
+This program takes in an integer input from 0 to 100, and prints the alphabetical grades
+by the range.
+Please input an integer from 0 to 100: alpha
+FATAL ERROR, the program has been terminated (note: give an integer between 0 - 100!!)
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004heexit[?2004l
+
+Script done on Fri Feb 17 14:20:02 2023

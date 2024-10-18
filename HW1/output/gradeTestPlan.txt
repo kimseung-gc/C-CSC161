@@ -1,0 +1,20 @@
+Grade
+input: -1
+expected output: 
+FATAL ERROR, the program has been terminated (note: give an integer between 0 - 100!!)
+
+input: 99
+expected output:
+A+
+
+input: 0
+expected output:
+F
+
+input: 100
+expected output:
+A+
+
+input: 101
+expected output:
+FATAL ERROR, the program has been terminated (note: give an integer between 0 - 100!!)

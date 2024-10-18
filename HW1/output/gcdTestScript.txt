@@ -1,0 +1,29 @@
+Script started on Fri Feb 17 14:21:50 2023
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"gcd"[?2004l
+This program takes in two integer inputs, and prints their greatest common denominator
+Enter two integers: 0 0
+Their greatest common denominator is: 0
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"gcd"[?2004l
+This program takes in two integer inputs, and prints their greatest common denominator
+Enter two integers: 50 0
+Their greatest common denominator is: 50
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"gcd"[?2004l
+This program takes in two integer inputs, and prints their greatest common denominator
+Enter two integers: 0 50
+Their greatest common denominator is: 50
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"gcd"[?2004l
+This program takes in two integer inputs, and prints their greatest common denominator
+Enter two integers: -20 -5
+Their greatest common denominator is: -5
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004hccd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/HW1/ [Kooutput"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004h../"gcd"[?2004l
+This program takes in two integer inputs, and prints their greatest common denominator
+Enter two integers: 20 -5
+Their greatest common denominator is: -5
+[1m[7m%[27m[1m[0m                                                                                                                          [0m[27m[24m[Jshk2003@gimseunghyeon-ui-MacBookPro output % [K[?2004heexit[?2004l
+
+Script done on Fri Feb 17 14:22:41 2023
