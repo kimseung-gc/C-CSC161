@@ -1,0 +1,9 @@
+Region                        Standard Dev  Average         Mode       Min        Q1         Median     Q3         Max
+Seoul Teok Byoul Si           3.967651      99.802000       99         94         97         100        101        109       
+Busan Kwang Yeok Si           4.069453      100.148365      99         94         97         100        101        110       
+Dae Gu Kwang Yeok Si          4.438193      100.095323      99         94         97         100        102        110       
+Incheon Kwang Yeok Si         4.363064      100.062115      99         94         97         100        102        110       
+Kwang Ju Kwang Yeok Si        4.098296      100.343646      99         95         97         100        102        110       
+Dae Jeon Kwang Yeok Si        3.940173      100.318635      99         95         97         100        102        110       
+Ul San Kwang Yeok Si          3.694355      100.721667      99         96         98         100        101        110       
+Sejong Teok Byoul Ja Chi Si   3.932699      104.158462      109        99         100        106        109        110       

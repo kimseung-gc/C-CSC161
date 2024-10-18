@@ -1,0 +1,2 @@
+Region                        Standard Dev  Average         Mode       Min        Q1         Median     Q3         Max
+Domestic Total(RoK)           4.205225      100.123302      99         94         97         100        101        110       

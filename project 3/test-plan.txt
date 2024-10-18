@@ -1,0 +1,187 @@
+<SHK, JHG> test plan for project 3.
+
+    /***********************************************************************
+     * Name(s)  Seunghyeon Kim, Joyce Gill                                 *
+     * Assignment name (Project  3)                                        *
+     * Image Processing                                                    *
+     * Assignment for 10/04/2023                                           *
+     ***********************************************************************/
+
+    /* *********************************************************************
+     * Academic honesty certification:                                     *
+     *   Written/online sources used:                                      *
+     *     None                                                            *
+     *   Help obtained                                                     *
+     *     Prof. Johnson                                                   *
+     *   My/our signature(s) below confirms that the above list of sources *
+     *   is complete AND that I/we have not talked to anyone else          *
+     *   (e.g., CSC 161 students) about the solution to this problem       *
+     *                                                                     *
+     *   Signature: SHK, JHG                                               *
+     ***********************************************************************/
+
+pic-experiments.c
+
+  We are taking two photos for this C file as the functions 
+  colorToGray and setPictureMax both modifies the original picture 
+  object. Thus, we decided two utilize two different pictures.
+
+  1. We should see that the Scribbler 2 robot is taking two 
+  pictures it does not take long for the robot to send the images 
+  from its hardware into the computer.
+
+  2. When the computer receives the image, it displays the first 
+  image that was taken by the Scribbler 2 robot for 5 seconds on 
+  a window/tab that is named "display of pict." 
+
+  3. 
+  With the first image,
+  the program then goes through a process of conversion of 
+  converting a color image into grey scale by using the formula
+        {R, G, B} = {H, H, H}
+  where 
+        H = R*RSCALE+G*GSCALE+B*BSCALE.
+  In the project, we were supposed to set 
+        RSCALE = 0.3
+        GSCALE = 0.59
+        BSCALE = 0.11
+  and we did so as a macro. Using the formula, the program 
+  changes each and every values of the pixels as H where its 
+  formula is stated above.
+
+  With the second image,
+  the program finds out the maximum RGB value in each of the 
+  pixels and leaves the maximum value on its color, and sets 
+  the other RGB values 0. 
+  
+  4. And then it displays the converted images.
+  pict is shown on a window named "display of pict in black 
+  and white" for 5 seconds.
+    This image looks like a picture in black and white like 
+    the 1900s. 
+  pict2 is shown on a window named "display of pict2 set max 
+  pixel" for 5 seconds.
+    This image looks like as if it went through a infra-red
+    camera. In some of the corners that the image has, it 
+    shows a single colored bias (only one specific type of 
+    color is shown).
+  * note that when a totally black-colored image is put in,
+  both the functions will not modify the original picture as
+  modified image will be the same as the original.
+
+  Observations
+
+    We tested this program with Seunghyeon's selfie taken by
+    the Scribble 2 robot. The modified image looked black and
+    white like the 1900s. 
+
+    The second modified image, however, looked as if it was a 
+    game with glitches. Also, we have programmed the second
+    image in such a manner that completely white colored pixels 
+    (AKA {255, 255, 255}) will look red. by such indicator, we 
+    saw that the function works perfectly, but next time, I think 
+    the program could be enhanced by making two or more equal and 
+    maximum RGB values to not be set to 0, but set the rest of 
+    them 0. Then it will fix the problem setting completely white 
+    colored pixels red.
+
+    The test image is made up of white, black, and beige color. 
+    Out of {251, 244, 211}, the red color is dominant, so the
+    setPictureMax function will produce a little bit dull red
+    color than that of the white pixels as 251 < 255. 
+    
+
+flip-picture.c
+
+  1. We observe that the Scribbler 2 robot takes a picture with
+  its camera. It does not take a long time for that image to be
+  transferred onto the lab computer.
+
+  2. When the lab computer receives the image, then the computer
+  displays the image on the window named "display of pict" for
+  5 seconds. 
+
+  3. After showing the original image, the program then flips the
+  pict by switching ith row and pic->height - 1 - i th row. The
+  row operations cannot happen with the array of pixels, so the
+  function swaps each values of the pixels.
+
+  4. After flipping the pict object, the program depicts the pict
+  object on a window named "display of flipped pict" for 5 seconds.
+    The output should look like the picture that the robot took,
+    upside down (note that the function does not flip right and
+    left, so it should only be inverted upside down).
+
+  Observations
+
+    We tested this program with the image of random lab computer 
+    taken by the Scribble 2 robot. Looking at the name of the lab
+    station that was upside down after being modified, we were able 
+    to know that the program works perfectly.
+
+    We also created a test image that had a 2x2 pixel white dot at
+    the top of a completely black image. When the flipImg function
+    is applied, the white part of the test image is supposed to go
+    down which it did.
+
+find-brightest.c
+
+  1. We observe that the Scribbler 2 robot takes a picture with
+  its camera. It does not take a long time for that image to be
+  transferred onto the lab computer.
+
+  2. When the lab computer receives the image, then the computer
+  displays the image on the window named "display of pict" for
+  5 seconds. 
+
+  3. Then the program finds out the value of the maximum RGB with
+  the function findSumOfMaxRGB. 
+  
+  4. Then the program goes through the image one more time in 
+  order to compare the sum of RGB values for each pixel and when
+  they are equal, it prints the pixels' coordinates. As an 
+  example, when the maximum pixel occurs in (5, 6) and (13, 332),
+  it prints both the coordinates as
+    (5, 6) (13, 332).
+
+  Observations
+
+    We have tested this modifying some of the images that we created 
+    earlier in "white-picture-with-black-dot.c," and it seems like
+    the program works as we have created an image with 2 white dots
+    on a black background, and it printed only 2 coordinates that
+    were the coordinates of the white dots.
+
+create-negative.c
+
+  1. We observe that the Scribbler 2 robot takes a picture with
+  its camera. It does not take a long time for that image to be
+  transferred onto the lab computer.
+
+  2. When the lab computer receives the image, then the computer
+  displays the image on the window named "display of pict" for
+  5 seconds. 
+
+  3. Then the program inverts each of the pixels by the formula
+  {255-R, 255-G, 255-B}.
+
+  4. Then the program prints the modified image. The image looks
+  spooky like the night-visioned cameras as in the game Outlast.
+
+  Observations
+
+    We have tested this program again with Seunghyeon's selfie
+    taken by the Scribbler 2 robot. The function seems to work
+    as the dark parts of the image looks more white and his skin
+    color which is closest to the combination {251, 206, 177}
+    looks more blue after the modification. For a more precise
+    test, we tested an image with only white pixels. After the 
+    conversion, the image is filled with black color, so we know 
+    that the function works.
+
+    Not only the random picture that was taken, but we also used
+    a test image that we created (it is commented as it was for 
+    testing purposes). The function works as the pixel inverted
+    image is supposed to produce black colored region for originally
+    white colored regions, and vice versa. For the light cyan color,
+    it is supposed to produce a red color which it does so.

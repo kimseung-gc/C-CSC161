@@ -1,0 +1,81 @@
+=================================================Compilation===================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % make dataAnalysis                                             
+clang -c dataAnalysisUnited.h
+clang -c dataAnalysis.c
+clang -o dataAnalysis dataAnalysis.o
+
+====================================================Trial 1====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/consumerPriceIndex1.txt ./data/test1.txt
+Region                        Standard Dev  Average         Mode       Min         Q1         Median     Q3         Max
+Kyeon Gi Do                   4.254035      100.067771      99         94          97         100        102        110        
+Gang Won Do                   4.860797      100.072708      99         94          96         100        102        111        
+Chung Cheong Buk Do           4.486124      100.251594      99         94          97         100        102        111        
+Chung Cheong Nam Do           4.396411      100.496615      99         95          97         100        102        111        
+Jeon Ra Buk Do                4.307435      100.193281      99         94          97         100        102        110        
+Jeon Ra Nam Do                4.518083      100.121729      99         94          97         100        102        110        
+Kyeon Sang Buk Do             4.281938      100.672854      99         95          98         100        102        111        
+Kyeon Sang Nam Do             4.098407      100.353333      99         95          97         100        102        110        
+Jeju Teok Byoul Ja Chi Do     4.634448      100.189531      99         93          97         100        102        110   
+ - one output file was generated
+  |_ test1.txt
+
+====================================================Trial 2====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/consumerPriceIndex2.txt ./data/test2.txt
+Region                        Standard Dev  Average         Mode       Min         Q1         Median     Q3         Max
+Seoul Teok Byoul Si           3.967651      99.802000       99         94          97         100        101        109        
+Busan Kwang Yeok Si           4.069453      100.148365      99         94          97         100        101        110        
+Dae Gu Kwang Yeok Si          4.438193      100.095323      99         94          97         100        102        110        
+Incheon Kwang Yeok Si         4.363064      100.062115      99         94          97         100        102        110        
+Kwang Ju Kwang Yeok Si        4.098296      100.343646      99         95          97         100        102        110        
+Dae Jeon Kwang Yeok Si        3.940173      100.318635      99         95          97         100        102        110        
+Ul San Kwang Yeok Si          3.694355      100.721667      99         96          98         100        101        110        
+Sejong Teok Byoul Ja Chi Si   3.932699      104.158462      109        99          100        106        109        110       
+ - one output file was generated
+  |_ test2.txt
+
+====================================================Trial 3====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/consumerPriceIndex3.txt ./data/test3.txt
+Region                        Standard Dev  Average         Mode       Min         Q1         Median     Q3         Max
+Domestic Total                4.205225      100.123302      99         94          97         100        101        110         
+ - one output file was generated
+  |_ test3.txt
+
+====================================================Trial 4====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest2.txt ./data/test4.txt ./euusu
+Usage: ./dataAnalysis file-input file-output
+ - no output file was generated
+
+====================================================Trial 5====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis
+Usage: ./dataAnalysis file-input file-output
+ - no output file was generated
+
+====================================================Trial 6====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest5.txt ./test.txt
+Some inputs not a number!!
+ - no output file was generated
+
+====================================================Trial 7====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest4.txt ./test.txt
+The file is empty!
+ - no output file was generated
+
+====================================================Trial 8====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest3.txt ./test.txt
+Wrong splitter!
+ - no output file was generated
+
+====================================================Trial 9====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest2.txt ./test.txt
+Invalid CPI! (CPI has to be larger than 0).
+ - no output file was generated
+
+====================================================Trial 10====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest1.txt ./test.txt
+Incorrect input file!
+ - no output file was generated
+
+====================================================Trial 11====================================================
+shk2003@gimseunghyeon-ui-MacBookPro HW2 % ./dataAnalysis ./data/falseTest.txt ./test.txt 
+Error in opening the file!
+ - no output file was generated

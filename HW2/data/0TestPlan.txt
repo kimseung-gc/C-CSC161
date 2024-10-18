@@ -1,0 +1,58 @@
+Invalid input file examples
+    e.x. 1 (CPI not present with invalid structure)
+        | pp    "ppppd"     "adsss"
+        | 23      "pp "   "uiui"
+    ./dataAnalysis <Invalid input e.x.1>.txt test<n>.txt
+        No output file should be produced and it should throw an error warning that the input file was invalid
+
+    e.x. 2 (negative CPI)
+        | "Region"	"Category"	"unit"	"2015.04"	"2015.05"	"2015.06"
+        | "Domestic"	"Consumer Price Index(overall)[2020=100]"	"2020=100"	"-94.625"	"-20"	"94.909"
+    ./dataAnalysis <Invalid input e.x.2>.txt test<n>.txt
+        No output file should be produced and it should throw an error warning that the input file contains
+        negative CPI.
+
+    e.x. 3 (empty CPI)
+        | "Region"	"Category"	"unit"
+        | "Domestic"	"Consumer Price Index(overall)[2020=100]"	"2020=100"
+    ./dataAnalysis <Invalid input e.x.3>.txt test<n>.txt
+        No output file should be produced and it should throw an error warning that the splitter was invalid.
+        In this case, the error is not specific because the structure is invalid, so wrong splitter counts as 
+        invalid structure.
+
+    e.x. 4 (invalid number of cmd line arguments)
+    ./dataAnalysis
+        No output file should be generated and it should print the following message:
+        Usage: ./dataAnalysis file-input file-output
+    
+    e.x. 5 (empty txt file)
+        | 
+    ./dataAnalysis <Invalid input e.x.5>.txt test<n>.txt
+        No output file should be produced and it should throw an error.
+
+    e.x. 6 (non-existent test input)
+    ./dataAnalysis <Invalid input e.x.6>.txt test<n>.txt
+        No output file should be produced and it should throw an error.
+
+Valid input file examples
+    e.x. 1
+        | "Region"	"Category"	"unit"	"2015.04"	"2015.05"	"2015.06"   "2015.07"   "2015.08"
+        | "Kyeong-Gi Do"	"Consumer Price Index(overall)[2020=100]"	"2020=100"	"94.487"	"94.799"	"94.78"	"94.989"	"95.102"
+    ./dataAnalysis <Valid input e.x.1>.txt test<n>.txt
+        expected output:
+        Region            Standard Dev  Average         Mode       Min        Q1         Median       Q3       Max
+        Kyeong-Gi Do      0.207232      94.763750       94         94         94         94         94         94    
+        The output file should be test<n>.txt.
+        | Region            Standard Dev  Average         Mode       Min        Q1         Median       Q3       Max
+        | Kyeong-Gi Do      0.207232      94.763750       94         94         94         94         94         94  
+
+    e.x. 2
+        | "Region"	"Category"	"unit"	"2015.04"	"2015.05"	"2015.06"   "2015.07"   "2015.08"
+        | "USA"	"Consumer Price Index(overall)[1983=100]"	"1983=100"	"236.599"	"237.805"	"238.638"	"238.654"	"238.316"
+    ./dataAnalysis <Valid input e.x.2>.txt test<n>.txt
+        expected output:
+        Region     Standard Dev  Average         Mode       Min        Q1         Median       Q3       Max
+        USA         0.968243      237.924000      238        236         237        238        238        238
+        The output file should be test<n>.txt.
+        | Region     Standard Dev  Average         Mode       Min        Q1         Median       Q3       Max
+        | USA         0.968243      237.924000      238        236         237        238        238        238

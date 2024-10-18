@@ -1,0 +1,844 @@
+Note that the saved files for trial 1 and 2 are named as the following:
+Trial 1
+    savedFileNew_TRIAL1
+    savedFileCompleted_TRIAL1
+    savedFileAssigned_TRIAL1
+
+Trial 2
+    savedFileNew_TRIAL2
+    savedFileCompleted_TRIAL2
+    savedFileAssigned_TRIAL2
+
+Trial 3 does not save any files!
+
+Trial 1
+    shk2003@gimseunghyeon-ui-MacBookPro project 4 % make 0TicketTracker   
+    clang -o 0TicketTracker 0TicketTracker.c
+    shk2003@gimseunghyeon-ui-MacBookPro output % ./0TicketTracker
+
+    =====================================Ticket Tracker Intro======================================
+        This program is a program that keeps track of all the tickets
+        made for a start-up tech support company. 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    p
+    Invalid Input! please input a valid one!
+    Note that the integer must be in the range [1, 7]!
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    1
+    What is the company identifier?                                          LARK[9932]
+    what is problem type?                                                    STOCK_PRICES_FALL[0012]
+    Created the first new ticket!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              1
+            Company Identifier:         LARK[9932]
+            Problem Type:               STOCK_PRICES_FALL[0012]
+            Status:                     new
+            Name of Technician:         unassigned
+            Address Stored in Computer: 0x151704080
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    1 APPLE_INC[932] TECHNICAL_ISSUES[3284] 4
+    What is the company identifier?                                          what is problem type?                                                    Successfully created 000002th new ticket!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLE_INC[932]
+            Problem Type:               TECHNICAL_ISSUES[3284]
+            Status:                     New
+            Name of Technician:         Unassigned
+            Address Stored in Computer: 0x151704160
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+    2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    1 FACEBOOK[82] COPYRIGHT[0001]
+    What is the company identifier?                                          what is problem type?                                                    Successfully created 000003th new ticket!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              3
+            Company Identifier:         FACEBOOK[82]
+            Problem Type:               COPYRIGHT[0001]
+            Status:                     New
+            Name of Technician:         Unassigned
+            Address Stored in Computer: 0x151606730
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+    2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Unassigned
+    3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    2
+    Which ticket number would you like to assign a technician?               2
+    What is the name of the technician? Press enter after finishing typing   Johnathan Murphy
+    Ticket successfully assigned!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLE_INC[932]
+            Problem Type:               TECHNICAL_ISSUES[3284]
+            Status:                     Assigned
+            Name of Technician:         Johnathan Murphy
+            Address Stored in Computer: 0x151704160
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    5
+    The names on the assigned tickets list are:
+
+    ==================================Assigned Ticket Details======================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+    3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    3 2
+    Which ticket number would you like to mark complete? Ticket successfully completed!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLE_INC[932]
+            Problem Type:               TECHNICAL_ISSUES[3284]
+            Status:                     Completed
+            Name of Technician:         Johnathan Murphy
+            Address Stored in Computer: 0x151704160
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    5
+    The names on the assigned tickets list are:
+
+    ==================================Assigned Ticket Details======================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    6
+    The names on the completed tickets list are:
+
+    ==================================Completed Ticket details=====================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    8
+    shk2003@gimseunghyeon-ui-MacBookPro output % cd "/Users/shk2003/Desktop/수업용 파일들/그리넬/1학년/Semester 2/CSC 161/projec
+    t 4/output"
+    ./"0TicketTracker"                                                                                                          
+    shk2003@gimseunghyeon-ui-MacBookPro output % ./"0TicketTracker"
+
+    =====================================Ticket Tracker Intro======================================
+        This program is a program that keeps track of all the tickets
+        made for a start-up tech support company. 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    9
+    Files are successfully loaded!
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+    3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    5
+    The names on the assigned tickets list are:
+
+    ==================================Assigned Ticket Details======================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    6
+    The names on the completed tickets list are:
+
+    ==================================Completed Ticket details=====================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    7
+    Have a nice day sir/maam!
+    shk2003@gimseunghyeon-ui-MacBookPro output %
+
+Trial 2
+    shk2003@gimseunghyeon-ui-MacBookPro project 4 % make 0TicketTracker   
+    clang -o 0TicketTracker 0TicketTracker.c
+    shk2003@gimseunghyeon-ui-MacBookPro output % ./0TicketTracker
+
+    =====================================Ticket Tracker Intro======================================
+        This program is a program that keeps track of all the tickets
+        made for a start-up tech support company. 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    9
+    Admin: Cannot open savedFileNew: No such file or directory
+    Some of the files were not found!
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    1 LAMBDADD[9828] TECH_ISSUES[9100]
+    What is the company identifier?                                          what is problem type?                                                    Created the first new ticket!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              1
+            Company Identifier:         LAMBDADD[9828]
+            Problem Type:               TECH_ISSUES[9100]
+            Status:                     new
+            Name of Technician:         unassigned
+            Address Stored in Computer: 0x137606730
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    1 APPLEBEE_INC[9920] MACHINERY_ISSUES[883]
+    What is the company identifier?                                          what is problem type?                                                    Successfully created 000002th new ticket!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLEBEE_INC[9920]
+            Problem Type:               MACHINERY_ISSUES[883]
+            Status:                     New
+            Name of Technician:         Unassigned
+            Address Stored in Computer: 0x137606810
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    3 2 TEMPORARY WORKER[ID:322]
+    Which ticket number would you like to mark complete? Ticket not found! 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    2 2 TEMPORARY WORKER[ID:322]        
+    Which ticket number would you like to assign a technician?               What is the name of the technician? Press enter after finishing typing   Ticket successfully assigned!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLEBEE_INC[9920]
+            Problem Type:               MACHINERY_ISSUES[883]
+            Status:                     Assigned
+            Name of Technician:         TEMPORARY WORKER[ID:322]
+            Address Stored in Computer: 0x137606810
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    3 2
+    Which ticket number would you like to mark complete? Ticket successfully completed!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLEBEE_INC[9920]
+            Problem Type:               MACHINERY_ISSUES[883]
+            Status:                     Completed
+            Name of Technician:         TEMPORARY WORKER[ID:322]
+            Address Stored in Computer: 0x137606810
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    0 1
+    Which ticket number would you like the details of?                       ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              1
+            Company Identifier:         LAMBDADD[9828]
+            Problem Type:               TECH_ISSUES[9100]
+            Status:                     new
+            Name of Technician:         unassigned
+            Address Stored in Computer: 0x137606730
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    0 2
+    Which ticket number would you like the details of?                       ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLEBEE_INC[9920]
+            Problem Type:               MACHINERY_ISSUES[883]
+            Status:                     Completed
+            Name of Technician:         TEMPORARY WORKER[ID:322]
+            Address Stored in Computer: 0x137606810
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    8
+    Files are successfully saved! Have a nice day sir/maam!
+    shk2003@gimseunghyeon-ui-MacBookPro output % ./0TicketTracker
+
+    =====================================Ticket Tracker Intro======================================
+        This program is a program that keeps track of all the tickets
+        made for a start-up tech support company. 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    9
+    Files are successfully loaded!
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | Unassigned
+    3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    5
+    The names on the assigned tickets list are:
+
+    ==================================Assigned Ticket Details======================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    6
+    The names on the completed tickets list are:
+
+    ==================================Completed Ticket details=====================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    0 2
+    Which ticket number would you like the details of?                       ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLE_INC[932]
+            Problem Type:               TECHNICAL_ISSUES[3284]
+            Status:                     Completed
+            Name of Technician:         Johnathan Murphy
+            Address Stored in Computer: 0x15ae068f0
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+
+Trial 3
+    =====================================Ticket Tracker Intro======================================
+        This program is a program that keeps track of all the tickets
+        made for a start-up tech support company. 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    1 LINDA[324] PRICE_TAG[33]
+    What is the company identifier?                                          what is problem type?                                                    Created the first new ticket!
+    ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              1
+            Company Identifier:         LINDA[324]
+            Problem Type:               PRICE_TAG[33]
+            Status:                     new
+            Name of Technician:         unassigned
+            Address Stored in Computer: 0x14d704080
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    2
+    Which ticket number would you like to assign a technician?               p
+    Invalid input! Please try again! 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    5
+    The names on the assigned tickets list are:
+
+    ==================================Assigned Ticket Details======================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    3
+    Which ticket number would you like to mark complete? 1
+    Ticket not found! 
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    6
+    The names on the completed tickets list are:
+
+    ==================================Completed Ticket details=====================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    5
+    The names on the assigned tickets list are:
+
+    ==================================Assigned Ticket Details======================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    4
+    The names on the new tickets list are:
+
+    =====================================New Ticket Details========================================
+    Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+    1             | LINDA[324]                   | PRICE_TAG[33]          | unassigned
+
+    End of List
+
+    ======================================Ticket Tracker 1.0=======================================
+        0. Print details of an existing ticket
+        1. Create a new tracking ticket
+        2. Assign a new ticket to a technician for handling
+        3. Mark a ticket complete
+        4. Print a list of new tickets
+        5. Print a list of assigned tickets
+        6. Print a list of completed tickets
+        7. Exit the program
+        8. Save and exit the program
+        9. Load saved files
+    7
+    Have a nice day sir/maam!

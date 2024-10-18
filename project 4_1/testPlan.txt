@@ -1,0 +1,272 @@
+0TicketTracker.c
+
+For this program, we have the saving files without the txt extension as it will be more efficient
+with the storage problems (txt files weight more than the ones without the extensions). When the 
+saving files are produced, please do not modify them as it will be disastrous if that happens (
+the saved files will not be loaded correctly due to modifications and incorrect format for fscanf).
+The printing statements are there in order to prove that the invalid inputs do not affect the list
+at all!
+
+Trial 1
+
+    Initial input: 'p' (Note that the input must be an integer from range [0,9])
+
+    Output: "Invalid Input!"
+
+    Input:  1 LARK[9932] STOCK_PRICES_FALL[0012] 
+            4
+
+    Output:
+        Ticket Details:
+            Ticket Number:              1
+            Company Identifier:         LARK[9932]
+            Problem Type:               STOCK_PRICES_FALL[0012]
+            Status:                     new
+            Name of Technician:         unassigned
+            Address Stored in Computer: <%p>
+        
+        =====================================New Ticket Details========================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+
+    Input:  1 APPLE_INC[932] TECHNICAL_ISSUES[3284] 
+            4
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              2
+                Company Identifier:         APPLE_INC[932]
+                Problem Type:               TECHNICAL_ISSUES[3284]
+                Status:                     New
+                Name of Technician:         Unassigned
+                Address Stored in Computer: <%p>
+        
+        =====================================New Ticket Details========================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+        2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Unassigned
+
+    Input:  1 FACEBOOK[82] COPYRIGHT[0001]
+            4
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              3
+                Company Identifier:         FACEBOOK[82]
+                Problem Type:               COPYRIGHT[0001]
+                Status:                     New
+                Name of Technician:         Unassigned
+                Address Stored in Computer: <%p>
+        
+        =====================================New Ticket Details========================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+        2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Unassigned
+        3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+
+    Input:  2 2 Johnathan Murphy
+            5
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              2
+                Company Identifier:         APPLE_INC[932]
+                Problem Type:               TECHNICAL_ISSUES[3284]
+                Status:                     Assigned
+                Name of Technician:         Johnathan Murphy
+                Address Stored in Computer: <%p>
+
+        ==================================Assigned Ticket Details======================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+
+    Input:  4
+
+    Output:
+        =====================================New Ticket Details========================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+        3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+    
+    Input:  3 2
+            5
+
+    Output:
+        ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              2
+            Company Identifier:         APPLE_INC[932]
+            Problem Type:               TECHNICAL_ISSUES[3284]
+            Status:                     Completed
+            Name of Technician:         Johnathan Murphy
+            Address Stored in Computer: <%p>
+        
+        ==================================Assigned Ticket Details======================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    Input:  6
+
+    Output:
+        ==================================Completed Ticket details=====================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+    
+    Input:  8
+
+    Output:
+        |_ ./savedFileAssigned
+            0
+        |_ ./savedFileCompleted
+            1
+            2|APPLE_INC[932]|TECHNICAL_ISSUES[3284]|Johnathan Murphy
+        |_ ./savedFileNew
+            2
+            1|LARK[9932]|STOCK_PRICES_FALL[0012]|unassigned
+            3|FACEBOOK[82]|COPYRIGHT[0001]|Unassigned
+        Files are successfully saved! Have a nice day sir/maam!
+    
+    Input:  9
+
+    Output:
+        Files are successfully loaded!
+    
+    Input:  4
+
+    Output: 
+        =====================================New Ticket Details========================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        1             | LARK[9932]                   | STOCK_PRICES_FALL[0... | unassigned
+        3             | FACEBOOK[82]                 | COPYRIGHT[0001]        | Unassigned
+
+    Input:  5
+
+    Output:
+        ==================================Assigned Ticket Details======================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+
+    Input:  6
+
+    Output:
+        ==================================Completed Ticket details=====================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician
+        2             | APPLE_INC[932]               | TECHNICAL_ISSUES[3284] | Johnathan Murphy
+
+Trial 2
+
+    Initial input:  9
+
+    Output:
+        Admin: Cannot open savedFileNew: No such file or directory
+        Some of the files were not found!
+
+    Input:  1 LAMBDADD[9828] TECH_ISSUES[9100]
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              1
+                Company Identifier:         LAMBDADD[9828]
+                Problem Type:               TECH_ISSUES[9100]
+                Status:                     new
+                Name of Technician:         unassigned
+                Address Stored in Computer: <%p>
+
+    Input:  1 APPLEBEE_INC[9920] MACHINERY_ISSUES[883]
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              2
+                Company Identifier:         APPLEBEE_INC[9920]
+                Problem Type:               MACHINERY_ISSUES[883]
+                Status:                     New
+                Name of Technician:         Unassigned
+                Address Stored in Computer: <%p>
+    
+    Input: 2 2 TEMPORARY WORKER[ID:322]
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              2
+                Company Identifier:         APPLEBEE_INC[9920]
+                Problem Type:               MACHINERY_ISSUES[883]
+                Status:                     Assigned
+                Name of Technician:         TEMPORARY WORKER[ID:322]
+                Address Stored in Computer: <%p>
+
+    Input: 3 2
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              2
+                Company Identifier:         APPLEBEE_INC[9920]
+                Problem Type:               MACHINERY_ISSUES[883]
+                Status:                     Completed
+                Name of Technician:         TEMPORARY WORKER[ID:322]
+                Address Stored in Computer: <%p>
+    
+    Input: 0 1
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              1
+                Company Identifier:         LAMBDADD[9828]
+                Problem Type:               TECH_ISSUES[9100]
+                Status:                     new
+                Name of Technician:         unassigned
+                Address Stored in Computer: <%p>
+    
+    Input: 0 2
+
+    Output:
+        ========================================Ticket Details=========================================
+            Ticket Details:
+                Ticket Number:              2
+                Company Identifier:         APPLEBEE_INC[9920]
+                Problem Type:               MACHINERY_ISSUES[883]
+                Status:                     Completed
+                Name of Technician:         TEMPORARY WORKER[ID:322]
+                Address Stored in Computer: 0x137606810
+    
+    Input: 8
+
+    Output:
+        Files are successfully saved! Have a nice day sir/maam!
+        |_ savedFileNew
+            1
+            1|LAMBDADD[9828]|TECH_ISSUES[9100]|unassigned
+        |_ savedFileAssigned
+            0
+        |_ savedFileCompleted
+            1
+            2|APPLEBEE_INC[9920]|MACHINERY_ISSUES[883]|TEMPORARY WORKER[ID:322]
+
+Trial 3
+    Initial input:  1 LARK[9932] STOCK_PRICES_FALL[0012] 
+
+    Output:
+        ========================================Ticket Details=========================================
+        Ticket Details:
+            Ticket Number:              1
+            Company Identifier:         LARK[9932]
+            Problem Type:               STOCK_PRICES_FALL[0012]
+            Status:                     new
+            Name of Technician:         unassigned
+            Address Stored in Computer: <%p>
+    
+    Input: 2 'p'
+
+    Output:
+        Invalid input!
+    
+    Input: 5
+
+    Output:
+        ==================================Assigned Ticket Details======================================
+        Ticket Number |      Company Identifier      |      Problem Type      | Name of Technician

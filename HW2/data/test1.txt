@@ -1,0 +1,10 @@
+Region                        Standard Dev  Average         Mode       Min        Q1         Median     Q3         Max
+Kyeon Gi Do                   4.254035      100.067771      99         94         97         100        102        110       
+Gang Won Do                   4.860797      100.072708      99         94         96         100        102        111       
+Chung Cheong Buk Do           4.486124      100.251594      99         94         97         100        102        111       
+Chung Cheong Nam Do           4.396411      100.496615      99         95         97         100        102        111       
+Jeon Ra Buk Do                4.307435      100.193281      99         94         97         100        102        110       
+Jeon Ra Nam Do                4.518083      100.121729      99         94         97         100        102        110       
+Kyeon Sang Buk Do             4.281938      100.672854      99         95         98         100        102        111       
+Kyeon Sang Nam Do             4.098407      100.353333      99         95         97         100        102        110       
+Jeju Teok Byoul Ja Chi Do     4.634448      100.189531      99         93         97         100        102        110       
